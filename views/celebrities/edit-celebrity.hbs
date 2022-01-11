@@ -1,0 +1,10 @@
+<h2>Edit {{celebrityOnDisplay.name}}</h2>
+<form method="POST" action="/celebrities/{{celebrityOnDisplay._id}}/edit">
+    <label for="title">name</label>
+    <input type="text" name="name" value={{celebrityOnDisplay.name}}>
+    <label for="genre">occupation</label>
+    <input type="text" name="occupation" value={{celebrityOnDisplay.occupation}}>
+    <label for="plot">catchPhrase</label>
+    <input type="text" name="catchPhrase" value={{celebrityOnDisplay.catchPhrase}}>
+        <button>Edit</button>
+</form>
